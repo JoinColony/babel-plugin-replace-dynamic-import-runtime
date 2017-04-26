@@ -1,0 +1,42 @@
+{
+  "name": "babel-plugin-replace-dynamic-import-runtime",
+  "version": "1.0.0",
+  "description": "Babel plugin to replace import() with require() at runtime, for node Edit",
+  "main": "build/index.js",
+  "scripts": {
+    "start": "npm run build:publish",
+    "build:publish": "babel source --out-dir build",
+    "clean": "rimraf build/*",
+    "prepublish": "npm run clean && npm run build:publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoinColony/babel-plugin-replace-dynamic-import-runtime.git"
+  },
+  "keywords": [
+    "babel",
+    "babel-plugin",
+    "webpack",
+    "code-splitting",
+    "node"
+  ],
+  "author": "Raul Glogovetan <raul@colony.io> (https://colony.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JoinColony/babel-plugin-replace-dynamic-import-runtime/issues"
+  },
+  "homepage": "https://github.com/JoinColony/babel-plugin-replace-dynamic-import-runtime#readme",
+  "dependencies": {
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-template": "^6.24.1",
+    "babel-types": "^6.24.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "rimraf": "^2.6.1"
+  }
+}
