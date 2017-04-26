@@ -7,7 +7,7 @@
     "start": "npm run build:publish",
     "build:publish": "babel source --out-dir build",
     "clean": "rimraf build/*",
-    "prepublish": "npm run clean && npm run build:publish"
+    "prepublish": "npm run clean && npm run build:publish",
   },
   "repository": {
     "type": "git",
