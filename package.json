@@ -1,13 +1,13 @@
 {
   "name": "babel-plugin-replace-dynamic-import-runtime",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Babel plugin to replace import() with require() at runtime, for node Edit",
   "main": "build/index.js",
   "scripts": {
     "start": "npm run build:simple",
     "build:simple": "babel source --out-dir build",
     "clean": "rimraf build/*",
-    "prepublish": "npm run clean && npm run build:simple",
+    "prepublish": "npm run clean && npm run build:simple"
   },
   "repository": {
     "type": "git",
