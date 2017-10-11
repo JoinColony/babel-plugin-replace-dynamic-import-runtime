@@ -8,7 +8,6 @@
     "build:simple": "babel source --out-dir build",
     "clean": "rimraf build/*",
     "prepublish": "npm run clean && npm run build:simple",
-    "install": "npm run clean && npm run build:simple"
   },
   "repository": {
     "type": "git",
